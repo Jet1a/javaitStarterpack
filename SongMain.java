@@ -7,7 +7,7 @@ public class SongMain {
         Song song3 = new Song("World","Anna",280);
         song1.addToFavorite();
         song1.getFormattedDuration();
-        // song1.isSameArtist(song2);
+        song1.isSameArtist(song2);
         song2.isSameArtist(song3);
         song1.isFavorite();
         song1.addToFavorite();

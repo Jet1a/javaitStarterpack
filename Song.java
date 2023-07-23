@@ -61,8 +61,8 @@ public class Song {
         System.out.println(min+" minutes "+sec+" seconds");
         return time = min+" minutes "+sec+" seconds";
     }
-    public void isSameArtist(Song artist){
-        if(this.artist instanceof Song){
+    public void isSameArtist(Song song){
+        if(this.artist == song.artist){
             System.out.println("The same artist : "+ true);
         }else
             System.out.println("The same artist : "+ false);
