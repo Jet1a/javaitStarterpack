@@ -1,5 +1,3 @@
-package SongOOP;
-
 public class SongMain {
     public static void main(String[] args) {
         Song song1 = new Song("Shape","Ed",234);
