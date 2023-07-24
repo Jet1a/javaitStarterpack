@@ -12,7 +12,7 @@ class myPlaylist {
 
         playlist.length();
 
-        playlist.removeSong("Song 1");
+        playlist.removeSong("Song 2");
 
         System.out.println(playlist.showPlaylist());
     }

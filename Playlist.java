@@ -75,12 +75,21 @@ public class Playlist {
         return totalCount;
     }
 
-    public void removeSong(String string) {
+    public void removeSong(String title) {
+        int indexToRemove = -1;
         for (int i = 0; i < count; i++) {
-            songs[i] = songs[i + 1];
+            if (songs[i].getTitle().equals(title)) {
+                indexToRemove = i;
+                break;
+            }
         }
-        songs[count - 1] = null;
-        count--;
+        if (indexToRemove != -1) {
+            // Shift elements to the left, starting from the index to remove
+            for (int i = indexToRemove; i < count - 1; i++) {
+                songs[i] = songs[i + 1];
+            }
+            songs[count - 1] = null; // Remove the reference to the last element
+            count--; // Decrement the count to reflect the removal of the song
+        }
     }
-
 }
